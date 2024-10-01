@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fitems{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: chartreuse;
+    border-width: 10px;
+    border-style: double;
+    margin: 20px;
+    /* opacity: 0; */
+}
+
+.fcontainer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    /* align-content: center; */
+}
+
+#item1{
+    order: 2;
+}
+
+/* .fcontainer:hover .fitems{
+    opacity: 1;
+    transition: all ease 0.5s;
+} */
