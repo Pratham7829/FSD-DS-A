@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 5px lightgrey;
+    padding: 10px 15px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav .logo h2{
+    letter-spacing: -1px;
+    color: rgb(35, 160, 129);
+}
+
+.choices{
+    display: flex;
+    gap: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.choices a{
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(4, 93, 70);
+}
+
+.choices a:hover{
+    background-color: rgb(19, 204, 105);
+    color: #ffffff;
+    transition: all ease 0.4s;
+}
+
+.login{
+    margin-left: auto;
+    margin-right: 1vw;
+}
+
+.login #btn1{
+    border: none;
+    padding: 8px 15px;
+    background-color: rgb(19, 204, 105);
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 12px;
+}
+
+.login #btn2{
+    border: none;
+    padding: 8px 15px;
+    background-color: rgb(19, 204, 105);
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 12px;
+}
+
+.main-content{
+    padding-top: 1vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content h1{
+    color: #192B3A;
+}
+
+.main-content .content-box{
+    margin-top: 1vw;
+    position: relative;
+    width: 50vw;
+    height: 60vh;
+    /* background-color: red; */
+    /* overflow: hidden; */
+}
+
+.content-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-content .content-box .video{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all ease 0.5s;
+    z-index: 1;
+}
+
+.main-content .video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-content .content-box:hover .video{
+    opacity: 1;
+}
+
+.main-content .content-box .circle{
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.main-content .content-box .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.1s;
+}
+
+.main-content .content-box .circle h1{
+    color: #ffffff;
+}

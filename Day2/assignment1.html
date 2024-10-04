@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="assignment1.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="https://img.freepik.com/premium-vector/phoenix-logo-vector-design-template_731715-165.jpg"
+                height="42px" width="50px">
+            <h2>Programming Pathshala</h2>
+        </div>
+        <div class="choices">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="login">
+            <button id="btn1">Log In</button>
+            <button id="btn2">Sign Up</button>
+        </div>
+    </div>
+    <div class="main-content">
+        <h1>Success Stories</h1>
+        <div class="content-box">
+            <img
+                src="https://i0.wp.com/www.fabledcollective.com/wp-content/uploads/2024/04/c7374eb3-f9fd-4522-b158-a6026d9f35ac-1.jpg?fit=1024%2C1024&ssl=1">
+            <div class="video">
+                <video
+                    src="https://www.shutterstock.com/shutterstock/videos/1102178281/preview/stock-footage-blue-bird-flying-animation-for-intro.webm"
+                    autoplay loop muted></video>
+                <div class="circle">
+                    <h1>Play</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get the video container and the circle element
+        const videoContainer = document.querySelector('.content-box .video');
+        const circle = document.querySelector('.content-box .circle');
+
+        // Add an event listener to track mouse movement within the video container
+        videoContainer.addEventListener('mousemove', (e) => {
+            // Get the position of the mouse within the video container
+            const rect = videoContainer.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            // Update the position of the circle
+            circle.style.left = `${x}px`;
+            circle.style.top = `${y}px`;
+        });
+
+    </script>
+</body>
+
+</html>
